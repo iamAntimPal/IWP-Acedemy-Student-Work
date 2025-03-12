@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px;">
+
+    <div style="max-width: 500px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h2 style="text-align: center;">Registration Form</h2>
+
+        <form action="#" method="POST">
+            
+            <label for="name" style="font-weight: bold;">Full Name:</label><br>
+            <input type="text" id="name" name="name" required 
+                style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;"><br>
+
+            <label for="email" style="font-weight: bold;">Email:</label><br>
+            <input type="email" id="email" name="email" required 
+                style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;"><br>
+
+            <label for="phone" style="font-weight: bold;">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required 
+                style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;"><br>
+
+            <label style="font-weight: bold;">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label><br><br>
+
+            <label for="address" style="font-weight: bold;">Address:</label><br>
+            <textarea id="address" name="address" required 
+                style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; height: 80px;"></textarea><br>
+
+            <label for="country" style="font-weight: bold;">Country:</label><br>
+            <select id="country" name="country" required 
+                style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                <option value="">Select your country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+            </select><br>
+
+            <label for="dob" style="font-weight: bold;">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required 
+                style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;"><br>
+
+            <label for="password" style="font-weight: bold;">Password:</label><br>
+            <input type="password" id="password" name="password" required 
+                style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;"><br>
+
+            <label for="confirm-password" style="font-weight: bold;">Confirm Password:</label><br>
+            <input type="password" id="confirm-password" name="confirm-password" required 
+                style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;"><br>
+
+            <label>
+                <input type="checkbox" name="terms" required> I agree to the terms and conditions
+            </label><br><br>
+
+            <input type="submit" value="Register" 
+                style="width: 100%; background-color: #28a745; color: white; padding: 10px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer;">
+        </form>
+    </div>
+
+</body>
+</html>

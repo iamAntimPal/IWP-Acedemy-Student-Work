@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marquee Example</title>
+</head>
+<body>
+  <!-- Simple scrolling text -->
+  <marquee scrollamount="10" bgcolor="#f0f0f0">
+    This text scrolls from right to left by default!
+  </marquee>
+
+  <!-- Scrolling with custom attributes -->
+  <marquee direction="right" scrollamount="10" bgcolor="#f0f0f0">
+    Fast scrolling to the right!
+  </marquee>
+
+  <!-- Vertical scrolling -->
+  <marquee direction="up" height="50px" behavior="alternate">
+    Up-and-down bouncing text!
+  </marquee>
+  <marquee 
+  behavior="alternate" 
+  direction="left" 
+  scrollamount="10" 
+  scrolldelay="50"
+  loop="50" 
+  bgcolor="yellow" 
+  width="80%" 
+  height="50px" 
+  hspace="20" 
+  vspace="15" 
+  onmouseover="this.stop()"
+  onmouseout="this.start()"
+>
+  This is a fully customized marquee!
+</marquee>
+
+</body>
+</html>

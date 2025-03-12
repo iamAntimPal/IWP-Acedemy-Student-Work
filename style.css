@@ -1,0 +1,29 @@
+* {
+     margin: 0;
+     padding: 0;
+}
+
+.navbar {
+     background-color: dimgray;
+     color: whitesmoke;
+     text-decoration: none;
+     display: flex;
+     justify-content: space-between;
+     height: 100px;
+}
+
+.navbar1 {
+     list-style-type: none;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+li a {
+     justify-content: space-between;
+     padding: 10px;
+     text-decoration: none;
+     color: whitesmoke;
+     font-size: 20px;
+     margin: 30px;
+}
