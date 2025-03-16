@@ -1,0 +1,125 @@
+<!-- About Me Section -->
+<section id="about" class="about-section" data-aos="fade-up">
+    <div class="about-container">
+        <!-- Profile Image (Left Side) -->
+        <div class="about-image">
+            <a href="https://github.com/iamAntimPal" target="_blank">
+                <img src="your-profile-pic.jpg" alt="Antim Pal">
+            </a>
+        </div>
+
+        <!-- About Me Content (Right Side) -->
+        <div class="about-text">
+            <h2 class="section-title">👋 About Me</h2>
+            <p>
+                Hi, I'm <strong>Antim Pal</strong>, an enthusiastic educator, tech mentor, and web developer.  
+                With a passion for <strong>Computer Science, Data Analysis, and Graphic Design</strong>, I strive to make learning engaging and effective.
+            </p>
+            <p>
+                I have experience teaching courses like <strong>Web Designing, Python, Basic Computer, HTML, CSS, Graphic Design</strong>, and more.  
+                Currently, I am working with <strong>IWP Academy</strong> and also run my online education platform, <strong>OPTIMISM EDUCATOR</strong>, where I create educational content on YouTube.
+            </p>
+            <p>
+                Apart from teaching, I love coding, designing creative visuals, and exploring data analytics.  
+                I am also preparing for the <strong>SSC CGL & MCA entrance</strong> exams to expand my academic and technical knowledge.
+            </p>
+            <a href="#contact" class="btn-contact">📩 Contact Me</a>
+        </div>
+    </div>
+</section>
+
+<!-- CSS Styling -->
+<style>
+    .about-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 20px;
+        background-color: #121212;
+        color: #fff;
+    }
+
+    .about-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .about-image {
+        flex: 1;
+        max-width: 250px;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 200px;
+        border-radius: 50%;
+        box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .about-image img:hover {
+        transform: scale(1.1);
+    }
+
+    .about-text {
+        flex: 2;
+        max-width: 600px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        color: #58a6ff;
+        margin-bottom: 10px;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    .btn-contact {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 10px;
+        background: #ff9800;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .btn-contact:hover {
+        background: #e68900;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .about-container {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .about-image {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .about-text {
+            max-width: 90%;
+        }
+    }
+</style>
+
+<!-- AOS Animation Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>

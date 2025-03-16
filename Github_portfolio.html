@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Antim Pal | GitHub Profile</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    /* Custom Styles */
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .navbar {
+      background-color: #1f1f1f;
+    }
+    .hero {
+      background: url('assets/banner.png') no-repeat center center;
+      background-size: cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .section-title {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .card {
+      background-color: #1f1f1f;
+      border: none;
+    }
+    footer {
+      background-color: #1f1f1f;
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Antim Pal</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tech">Tech Stack</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#stats">GitHub Stats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content container">
+      <img
+        src="assets/welcome-header.gif"
+        alt="Welcome Header"
+        class="mb-3 img-fluid"
+        style="max-width: 80%;"
+      />
+      <h1>I'm Antim Pal</h1>
+      <p class="lead">
+        Training Specialist at IWP Academy | Data Analyst | Open Source Enthusiast
+      </p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <img
+            src="assets/Antim_pal.png"
+            alt="Antim Pal"
+            class="img-fluid rounded-circle mb-3"
+          />
+        </div>
+        <div class="col-md-8">
+          <p>
+            I am qualified with foundational knowledge in statistical analysis,
+            data cleaning, and data modeling techniques. Proficient in Python and SQL,
+            I am eager to apply my skills to manipulate and analyze data effectively.
+            I am passionate about creating interactive dashboards using Power BI and
+            continuously learning new technologies.
+          </p>
+          <p>
+            Currently, I work as a Data Analyst and Graphic Designer while training
+            aspiring developers and data enthusiasts. My dedication to problem-solving
+            and open source makes my GitHub profile a hub of creativity and innovation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section id="tech" class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="row text-center">
+        <!-- Each tech icon can be repeated in a column -->
+        <div class="col-4 col-md-2 mb-4">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+            alt="Python"
+            width="50"
+          />
+          <p>Python</p>
+        </div>
+        <div class="col-4 col-md-2 mb-4">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+            alt="HTML5"
+            width="50"
+          />
+          <p>HTML5</p>
+        </div>
+        <div class="col-4 col-md-2 mb-4">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+            alt="CSS3"
+            width="50"
+          />
+          <p>CSS3</p>
+        </div>
+        <div class="col-4 col-md-2 mb-4">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+            alt="C++"
+            width="50"
+          />
+          <p>C++</p>
+        </div>
+        <div class="col-4 col-md-2 mb-4">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+            alt="Java"
+            width="50"
+          />
+          <p>Java</p>
+        </div>
+        <div class="col-4 col-md-2 mb-4">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+            alt="MySQL"
+            width="50"
+          />
+          <p>MySQL</p>
+        </div>
+        <!-- Add additional tech icons as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="row">
+        <!-- Example Project Card -->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/600x300"
+              class="card-img-top"
+              alt="Project Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Hotel Management</h5>
+              <p class="card-text">
+                A robust hotel management system built with a focus on usability and efficiency.
+              </p>
+              <a
+                href="https://github.com/iamAntimPal/Hotel-Management"
+                target="_blank"
+                class="btn btn-primary"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub Stats Section -->
+  <section id="stats" class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="section-title">GitHub Stats</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center mb-3">
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=iamAntimPal&show_icons=true&theme=dark"
+            alt="GitHub Stats"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-6 text-center mb-3">
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=iamAntimPal&layout=compact&theme=dark"
+            alt="Top Languages"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title">Get In Touch</h2>
+      <p>
+        If you'd like to collaborate or just say hello, feel free to reach out via email or connect on LinkedIn.
+      </p>
+      <a href="mailto:antimpal01617121@gmail.com" class="btn btn-outline-primary me-2">
+        Email Me
+      </a>
+      <a href="https://www.linkedin.com/in/antim-pal/" target="_blank" class="btn btn-outline-info me-2">
+        LinkedIn
+      </a>
+      <a href="https://chat.whatsapp.com/CDEWDYYKc0i2z1We9xwKfK" target="_blank" class="btn btn-outline-success">
+        Join WhatsApp Group
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Antim Pal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Antim Pal | GitHub Profile</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    /* CSS Variables for Dark and Light Themes */
+    :root {
+      --bg-color: #121212;
+      --text-color: #ffffff;
+      --primary-color: #1f1f1f;
+      --link-color: #0d6efd;
+      --card-bg: #1f1f1f;
+    }
+    body.light-mode {
+      --bg-color: #f8f9fa;
+      --text-color: #212529;
+      --primary-color: #ffffff;
+      --link-color: #0d6efd;
+      --card-bg: #ffffff;
+    }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .navbar,
+    footer {
+      background-color: var(--primary-color);
+    }
+    a {
+      color: var(--link-color);
+    }
+    .card {
+      background-color: var(--card-bg);
+      border: none;
+    }
+    .theme-toggle {
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+    /* Hero Section */
+    .hero {
+      background: url('assets/banner.png') no-repeat center center;
+      background-size: cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .section-title {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .repo-card {
+      transition: transform 0.2s;
+    }
+    .repo-card:hover {
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Antim Pal</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#stats">Stats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#repos">Repositories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <span class="nav-link theme-toggle" id="theme-toggle">🌓</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content container">
+      <img
+        src="assets/welcome-header.gif"
+        alt="Welcome Header"
+        class="mb-3 img-fluid"
+        style="max-width: 80%;"
+      />
+      <h1>I'm Antim Pal</h1>
+      <p class="lead">
+        Training Specialist at IWP Academy | Data Analyst | Open Source Enthusiast
+      </p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <img
+            src="assets/Antim_pal.png"
+            alt="Antim Pal"
+            class="img-fluid rounded-circle mb-3"
+          />
+        </div>
+        <div class="col-md-8">
+          <p>
+            I am qualified with foundational knowledge in statistical analysis, data
+            cleaning, and data modeling techniques. Proficient in Python and SQL, I
+            excel in manipulating and analyzing data effectively. I love creating
+            interactive dashboards using Power BI and am always learning new
+            technologies.
+          </p>
+          <p>
+            As a Data Analyst and Graphic Designer, I share my passion for open source
+            and continuous improvement through my GitHub profile.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub Stats Section -->
+  <section id="stats" class="py-5 bg-secondary bg-opacity-10">
+    <div class="container">
+      <h2 class="section-title">GitHub Stats</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4 text-center">
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=iamAntimPal&show_icons=true&theme=radical"
+            alt="GitHub Stats"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-6 mb-4 text-center">
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=iamAntimPal&layout=compact&theme=radical"
+            alt="Top Languages"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-4 text-center">
+          <img
+            src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=iamAntimPal&theme=radical"
+            alt="Profile Summary"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-6 mb-4 text-center">
+          <img
+            src="https://github-readme-streak-stats.herokuapp.com/?user=iamAntimPal&theme=radical"
+            alt="Streak Stats"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Repositories Section -->
+  <section id="repos" class="py-5">
+    <div class="container">
+      <h2 class="section-title">All Repositories</h2>
+      <div id="repo-list" class="row">
+        <!-- Repository cards will be injected here via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-secondary bg-opacity-10">
+    <div class="container text-center">
+      <h2 class="section-title">Get In Touch</h2>
+      <p>
+        For collaborations or inquiries, feel free to reach out via email or connect on LinkedIn.
+      </p>
+      <a href="mailto:antimpal01617121@gmail.com" class="btn btn-outline-primary me-2">
+        Email Me
+      </a>
+      <a href="https://www.linkedin.com/in/antim-pal/" target="_blank" class="btn btn-outline-info me-2">
+        LinkedIn
+      </a>
+      <a href="https://chat.whatsapp.com/CDEWDYYKc0i2z1We9xwKfK" target="_blank" class="btn btn-outline-success">
+        Join WhatsApp Group
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-3">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 Antim Pal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript for Theme Toggle and GitHub Repos Fetch -->
+  <script>
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    if (currentTheme === 'light') {
+      document.body.classList.add('light-mode');
+    }
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      const theme = document.body.classList.contains('light-mode') ? 'light' : 'dark';
+      localStorage.setItem('theme', theme);
+    });
+
+    // Fetch and Display GitHub Repositories
+    const repoList = document.getElementById('repo-list');
+    const username = 'iamAntimPal';
+
+    async function fetchRepos() {
+      try {
+        const response = await fetch(`https://api.github.com/users/${username}/repos?per_page=100&sort=updated`);
+        const repos = await response.json();
+        // Optionally sort repositories by last updated
+        repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+        repos.forEach(repo => {
+          const repoCard = document.createElement('div');
+          repoCard.className = 'col-md-4 mb-4';
+          repoCard.innerHTML = `
+            <div class="card h-100 repo-card">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">${repo.name}</h5>
+                <p class="card-text">
+                  ${repo.description ? repo.description : 'No description provided.'}
+                </p>
+                <div class="mt-auto">
+                  <a href="${repo.html_url}" target="_blank" class="btn btn-primary btn-sm">View Repository</a>
+                </div>
+              </div>
+              <div class="card-footer">
+                <small>Language: ${repo.language ? repo.language : 'N/A'}</small>
+                <br>
+                <small>⭐ ${repo.stargazers_count} | Forks: ${repo.forks_count}</small>
+              </div>
+            </div>
+          `;
+          repoList.appendChild(repoCard);
+        });
+      } catch (error) {
+        console.error('Error fetching repositories:', error);
+        repoList.innerHTML = '<p class="text-center">Failed to load repositories.</p>';
+      }
+    }
+    fetchRepos();
+  </script>
+</body>
+</html>
